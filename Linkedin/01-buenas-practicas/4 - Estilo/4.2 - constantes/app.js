@@ -1,0 +1,3 @@
+let LIMITE = 30;
+
+let LIMITE_TOTAL = 30;
