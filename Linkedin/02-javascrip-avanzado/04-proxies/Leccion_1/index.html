@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            /*
+		 
+			* Este código JavaScript utiliza el objeto Proxy para interceptar llamadas a una función.
+
+			* Primero, se define una función target que toma dos argumentos, nombre y apellido, 
+			* y luego imprime una cadena que incluye estos dos argumentos.
+
+			* Luego, se define un objeto handler que tiene un método apply. 
+			* Este método se invoca cuando se llama a la función target. 
+			* El método apply toma tres argumentos: la función objetivo (target), 
+			* el valor de this y los argumentos con los que se llamó a la función (args). 
+			* Dentro del método apply, se imprime un mensaje que indica que se ha llamado a la función y 
+			* con qué argumentos, y luego se llama a la función target con los argumentos proporcionados.
+
+			* Después, se crea un nuevo objeto Proxy llamado miProxy, pasando la función target y 
+			* el objeto handler al constructor Proxy.
+
+			* Finalmente, se llama a miProxy con los argumentos 'Natalia' y 'Corea'. 
+			* Como miProxy es un proxy para la función target, esto desencadena el método apply en el objeto 
+			* handler, que a su vez llama a la función target.
+		 
+		*/
+
+            const target = function (nombre, apellido) {
+                console.log(`Mi nombre es ${nombre} ${apellido}`);
+            };
+
+            const handler = {
+                apply: function (target, thisValue, args) {
+                    console.log(
+                        `Se ha llamado la función ${target.name} con los parametros ${args}`
+                    );
+                    return target(...args);
+                },
+            };
+
+            const miProxy = new Proxy(target, handler);
+
+            miProxy('Natalia', 'Corea');
+
+            const DateProxied = new Proxy(Date, {
+                construct(target, args) {
+                    console.log(`Creamos un nuevo objeto Date`);
+                    return new target(...args);
+                },
+            });
+
+            let fecha = new DateProxied();
+        </script>
+    </body>
+</html>
