@@ -79,6 +79,7 @@ let imprimePropiedades = (personaje) => {
   console.log('trajes', personaje.trajes);
 };
 
+// Cuando se envía un objeto como argumento, se puede desestructurar en la declaración de la función
 imprimePropiedades = ({ nombre, codeName, vivo, edad = 15, trajes }) => {
   console.log(nombre);
   console.log(codeName);
