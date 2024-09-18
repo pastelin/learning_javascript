@@ -9,7 +9,7 @@ Algunos podrían pensar que Java y JS son lo mismo pero lo cierto es que son dos
 
 ## Hola Mundo en JavaScript
 
-Hola Mundo es la aplicación más sencilla que podemos construir en un lenguaje de programación
+El Hola Mundo es la aplicación más sencilla que podemos construir en un lenguaje de programación
 
 ### 01. Desde la consola del navegador
 
@@ -27,7 +27,7 @@ El console.log imprime en consola lo que se encuentre dentro de las comillas
 2. Ejecutar en la terminal el comando **node** y entramos en un modo edición
 3. Ejecutamos ``` console.log('Hola Mundo') ``` y obtenemos la misma respuesta que en el navegador
 
-### 02. Desde un archivo JS
+### 03. Desde un archivo JS
 
 1. Crear archivo app.js
 2. Colocar ``` console.log('Hola Mundo') ```
@@ -47,28 +47,6 @@ El console.log imprime en consola lo que se encuentre dentro de las comillas
 
 Escribe la frase **Hola Mundo** desde el HTML
 
-
-#
-#
-
-
-## Variables y Comentarios
-
-Los comentarios son líneas de código que el interprete de JavaScript ignorará a la hora de ejecutarlo, que nos puede servir para describir una funcionalidad o marcar cosas que haremos posterior mente.
-
-1. Comentarios en línea **//**
-2. Comentarios en bloque /* */
-2. Comentarios para documentación /** */
-
-#
-
-Las variables son un contenedor de información que apunta a un lugar de memoria en nuestros equipos. Y para poder leer su valor hacermos referencia a la variable.
-
-JS tiene 3 formas de crear variables let, var y const
-
-1. var es una forma antigua de crear variables, que ha existido y seguirá existiendo por el tema de la compatibilidad con los navegadores webs
-
-3. const: crea una conste que hace referencia a un valor de memoria, en este caso 10, y este valor no va a poder cambiar.
 
 ## Extensiones
 
