@@ -1,4 +1,4 @@
-## Historia de JavaScript
+## Qué es JS?
 
 JS es un lenguaje de programación interpretado.
 
@@ -7,17 +7,12 @@ Algunos podrían pensar que Java y JS son lo mismo pero lo cierto es que son dos
 #
 #
 
-## Hola Mundo en JavaScript
+## Desarrollar nuestro Hola Mundo en JavaScript
 
 El Hola Mundo es la aplicación más sencilla que podemos construir en un lenguaje de programación
 
 ### 01. Desde la consola del navegador
 
-``` console.log('Hola Mundo') ```
-
-El **;** es opcional pero se recomienda siempre usarlo para terminar una instrucción.
-
-El console.log imprime en consola lo que se encuentre dentro de las comillas
 
 **undefined, más adelante lo veremos, ya que todas las funciones en JS siempre tienen un return.**
 
@@ -54,3 +49,63 @@ Escribe la frase **Hola Mundo** desde el HTML
 2. CodeSnap
 3. Error Lens
 4. Prettier
+
+
+
+## NODE
+Es un entorno de ejecución de JavaScript del lado del servidor
+Lo que nos permite ejecutar código JavaScript fuera del navegador.
+
+### Caracteristicas Principales
+1. Node.js está construido sobre el motor V8 de Google, que es el mismo motor que utiliza el navegador Chrome para ejecutar JavaScript
+2. NPM (Node Package Manager): Es un gestor de paquetes que permite instalar, gestionar bibliotecas y dependencias de JavaScript fácilmente.
+
+
+## VITE
+Vite es una herramienta de construcción y desarrollo rápido para proyectos web modernos
+
+### Caracteristicas principales
+1. Desarrollo Rápido: Vite utiliza un servidor de desarrollo que proporciona recarga en caliente (hot module replacement), lo que nos permite ver los cambios en tiempo real sin necesidad de recargar toda la página.
+
+2. Configuración Sencilla: Vite tiene una configuración mínima por defecto.
+
+
+## Instalación de Vite 
+1. Abrir cdm en la carpeta raiz donde crearemos el proyecto
+2. Validar que se tenga node instalado con node --version
+3. crear proyecto con **npm create vite**
+	a. colocar nombre de proyecto
+	b. elegir vanilla que es JS sin frameworks
+	c. elegir JS
+4. acceder al proyecto
+5. instalar los paquetes con npm install
+6. ejecutar proyecto con npm run dev
+
+Vite nos va a ayudar a trabajar nuestra aplicacion con diferentes herramientas para automatizar procesos
+https://vitejs.dev/
+NPM (Node Package Manager)
+
+NODE: Ayuda a tener herramientas facil de instalar, y permite trabajar de una manera rápida y eficiente.
+
+### Activar que al ejecutar **code .** se abra vsc
+1. Ir a paleta de comandos ctrl + shift + p
+2. Teclear code y elegir : terminal, crear un nuevo terminal
+
+
+
+#### Mapas de origenes
+Mapas de Orígenes: Permiten depurar el código fuente original en lugar del código transpilado o empaquetado.
+
+## Actividades 
+
+
+
+
+## Tareas
+
+Insertar las tareas al inicio y no al final
+1. Resolver dos errores de la aplicación.
+2. Modificar colores o diseño de aplicación.
+3. Construir version productica con VITE.
+4. Deployar aplicación con Netlify
+

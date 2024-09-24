@@ -1,0 +1,37 @@
+<h1 class="todo-title">Tareas</h1>
+<section class="todoapp">
+    <header class="header">
+        <input
+            id="new-todo-input"
+            class="new-todo"
+            placeholder="¿Qué necesita ser hecho?"
+            autofocus
+        />
+    </header>
+
+    <section class="main">
+        <ul class="todo-list"></ul>
+    </section>
+
+    <footer class="footer">
+        <div class="d-flex">
+            <span class="todo-count"
+                ><strong id="pending-count">0</strong> pendiente(s)</span
+            >
+            <ul class="filters">
+                <li>
+                    <a class="filtro selected" href="#/">Todos</a>
+                </li>
+                <li>
+                    <a class="filtro" href="#/active">Pendientes</a>
+                </li>
+                <li>
+                    <a class="filtro" href="#/completed">Completados</a>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-container">
+            <button class="btn clear-completed">Eliminar completados</button>
+        </div>
+    </footer>
+</section>

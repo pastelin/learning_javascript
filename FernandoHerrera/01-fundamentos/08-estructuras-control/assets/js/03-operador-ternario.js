@@ -19,8 +19,8 @@ console.log(mensaje); // 'Eres mayor de edad'
 
 
 // TODO: 2. Simplificar el código anterior usando el operador ternario
-mensaje = (edad >= 18) ? 'Eres mayor de edad' : 'Eres menor de edad';
-console.log(mensaje); // 'Eres mayor de edad'
+let mensajeSimplificado = (edad >= 18) ? 'Eres mayor de edad' : 'Eres menor de edad';
+console.log(mensajeSimplificado); // 'Eres mayor de edad'
 
 
 // TODO: 3. Ejemplo con múltiples condiciones
@@ -29,7 +29,7 @@ let calificacion = (nota >= 90) ? 'A' :
                    (nota >= 80) ? 'B' :
                    (nota >= 70) ? 'C' :
                    (nota >= 60) ? 'D' : 'F';
-// console.log(calificacion); // 'B'
+console.log({calificacion}); // 'B'
 
 
 /*

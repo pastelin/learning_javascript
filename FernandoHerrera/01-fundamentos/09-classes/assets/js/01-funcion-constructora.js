@@ -1,4 +1,7 @@
 /*
+    * La Programación Orientada a Objetos (POO) se basa en el uso de objetos y clases para estructurar 
+    * el código de manera modular y reutilizable.
+
 	* ¿Qué es un objeto?
 		* Es una instancia de una clase o una estructura de datos que contiene propiedades y métodos.
 		* Los objetos se utilizan para representar entidades del mundo real y sus comportamientos
@@ -26,6 +29,11 @@ const ulises = new Persona('Ulises', 35);
 // TODO 3. Imprimir el método imprimir de cada instancia
 juan.imprimir();
 ulises.imprimir();
+
+
+
+
+
 
 // Objetos literales
 const persona = {

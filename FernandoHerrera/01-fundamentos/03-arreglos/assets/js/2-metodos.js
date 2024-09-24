@@ -33,7 +33,8 @@ meses.forEach((elemento, indice, arr) => {
 // TODO: 3 método push, agrega un elemento al final del arreglo
 console.warn('Método push');
 
-let nuevaLongitud = meses.push('julio');
+let nuevaLongitud = meses2.push('julio');
+
 
 // TODO 3.1 Imprimir la nueva longitud y el arreglo
 console.log({ nuevaLongitud, meses });
@@ -45,6 +46,7 @@ console.warn('Método unshift');
 
 nuevaLongitud = meses.unshift('enero');
 
+
 // TODO 4.1 Imprimir la nueva longitud y el arreglo
 console.log({ nuevaLongitud, meses });
 
@@ -55,7 +57,8 @@ console.warn('Método pop');
 
 let mesBorrado = meses.pop();
 
-// TODO 5.1 Imprimir la nueva longitud y el arreglo
+
+// TODO 5.1 Imprimir el elemento borrado y el arreglo
 console.log({ mesBorrado, meses });
 
 
@@ -65,7 +68,8 @@ console.warn('Método shift');
 
 mesBorrado = meses.shift();
 
-// TODO 6.1 Imprimir la nueva longitud y el arreglo
+
+// TODO 6.1 Imprimir el elemento borrado y el arreglo
 console.log({ mesBorrado, meses });
 
 
@@ -104,3 +108,17 @@ console.log({ indice });
 
 indice = meses.indexOf('En.');
 console.log({ indice });
+
+
+
+// TODO 9. Desestructuración de arreglos
+// * Nos permite extraer valores de un arreglo y asignarlos a variables de una manera más concisa y legible.
+console.warn('Desestructuración de arreglos');
+
+// TODO 9.1 Almacenar en variables los elementos 'Feb.' y 'Mar.' del arreglo 'meses'
+const [feb, mar] = meses;
+console.log({ feb, mar });
+
+// TODO 9.2 Almacenar en variables los elementos 'Feb.' y 'Jun.' del arreglo 'meses'
+const [febr, , , , jun] = meses;
+console.log({ febr, jun });

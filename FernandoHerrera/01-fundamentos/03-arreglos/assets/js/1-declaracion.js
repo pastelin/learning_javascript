@@ -3,10 +3,10 @@
 
     * NOTA: 
     * Los arreglos pueden almacenar cualquier tipo de dato, inclusive funciones, arreglos u objetos literales.
-    */
+*/
 
 // TODO: 1. Declaración de Arreglos:
-// Podemos realizar las declaración de arreglos de dos formas:
+// * Podemos realizar las declaración de arreglos de dos formas:
 
 // TODO 1.1 Declar arreglo usando el constructor de Array
 const meses = new Array('febrero', 'marzo', 'abril', 'mayo', 'junio');
@@ -19,7 +19,7 @@ console.log(meses2);
 
 
 // TODO 2. Acceso a Elementos:
-// NOTA: Los elementos de un arreglo se acceden utilizando índices, "Siempre comienzan en 0"
+// * NOTA: Los elementos de un arreglo se acceden utilizando índices, "Siempre comienzan en 0"
 
 // TODO 2.1 Imprimir el primer elemento de nuestro arreglo
 console.log(meses2[0]);
@@ -30,7 +30,7 @@ console.log(meses2[4]);
 
 
 // TODO: Tarea 1
-let arregloCosas = [
+let arregloCosas = [ 
     true,
     123,
     'JS',

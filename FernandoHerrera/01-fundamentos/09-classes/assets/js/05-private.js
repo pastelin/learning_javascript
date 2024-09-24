@@ -31,11 +31,11 @@ class Rectangulo {
     }
 }
 
-// Crear una instancia de la clase Rectangulo
+// * Crear una instancia de la clase Rectangulo
 const rectangulo = new Rectangulo(10, 15);
 rectangulo.imprimir();
 
-// Cambiar el valor del atributo de clase area
+// * Cambiar el valor del atributo de clase area
 rectangulo.area = 100;
 rectangulo.imprimir();
 

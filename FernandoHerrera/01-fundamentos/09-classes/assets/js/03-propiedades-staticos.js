@@ -1,8 +1,13 @@
+/*
+    * Las propiedades o métodos estáticos son aquellos que se pueden acceder sin la necesidad de instanciar la clase.
+*/
+
 class Persona {
-    // TODO: 1. Declarar propiedad estática llamada _conteo
+    
+    // TODO: 1. Declarar propiedad estática llamada _conteo e inicializarla en 0
     static _conteo = 0;
 
-    // TODO: 2. Crear un getter statico para la propiedad estática _conteo
+    // TODO: 2. Crear un getter statico 'conteo' que retorne la propiedad _conteo
     static get conteo() {
         return Persona._conteo + ' instancias';
     }
@@ -20,6 +25,7 @@ class Persona {
     constructor(nombre = 'Sin nombre') {
         this.nombre = nombre;
 
+        // TODO: 3. Incrementar en +1 la propiedad estática _conteo cada que se cree una instancia de la clase
         Persona._conteo++;
     }
 
@@ -44,8 +50,10 @@ const ironman = new Persona('Tony Stark', 'Ironman', 'Yo soy Ironman');
 // TODO: 4. Imprimir en consola la propiedad estática _conteo
 console.log('Conteo estático:', Persona._conteo);
 
+
 // TODO: 5. Imprimir en consola el getter estático conteo
 console.log(Persona.conteo);
+
 
 // TODO: 6. Llamar al método estático mensaje
 Persona.mensaje();

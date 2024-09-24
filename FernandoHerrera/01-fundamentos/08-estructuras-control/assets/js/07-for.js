@@ -27,14 +27,14 @@ for (let index = 0; index < diasSemana.length; index++) {
 }
 
 // TODO: 3. Ejemplo de for in
-// For in se utiliza para iterar sobre el indice de un arreglo o las propiedades de un objeto
+// * For in se utiliza para iterar sobre el indice de un arreglo o las propiedades de un objeto
 console.warn('For in');
 for (const index in diasSemana) {
   console.log(diasSemana[index]);
 }
 
 // TODO: 4. Ejemplo de for of
-// For of se utiliza para iterar sobre los valores de un arreglo o de un objeto iterable
+// * For of se utiliza para iterar sobre los valores de un arreglo o de un objeto iterable
 console.warn('For of');
 for (const dia of diasSemana) {
   console.log(dia);

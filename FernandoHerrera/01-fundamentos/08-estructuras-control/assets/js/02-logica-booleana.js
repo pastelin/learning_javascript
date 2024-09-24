@@ -15,31 +15,36 @@ const regresaFalse = () => {
   return false;
 };
 
-// TODO 1. Operador NOT o Negación (!), invierte el valor booleano de una expresión
+// TODO 1. Ejemplo del operador NOT o Negación (!), invierte el valor booleano de una expresión
 console.warn('Not o negación');
 console.log(true); // true
 console.log(!true); // false
 console.log(!false); // true
 console.log(!regresaFalse()); // true
 
-// TODO 2. Operador AND (&&), devuelve true si ambos valores son verdaderos
+
+// TODO 2. Ejemplo del operador AND (&&), devuelve true si ambos valores son verdaderos
 console.warn('And'); // true si todos los valores son verdaderos
 console.log(true && true); // true
 console.log(true && false); // false
 
-// TODO 3. Operador OR (||), devuelve true si alguno de los valores es verdadero
+
+// TODO 3. Ejemplo del operador OR (||), devuelve true si alguno de los valores es verdadero
 console.warn('OR'); // true si alguno de los valores es verdadero
 console.log(true || false); // true
 console.log(false || false); // false
 
 
-// TODO 4. Cortocircuito en operadores lógicos, es una técnica que permite no evaluar todas las expresiones de una operación lógica
+// TODO 4. Cortocircuito en operadores lógicos, 
 
-// TODO 4.1 Operador AND (&&), si la primera expresión es falsa, no se evalua la segunda expresión
+// * Es una técnica que permite no evaluar todas las expresiones de una operación lógica
+
+// TODO 4.1 Ejemplo del operador AND (&&), si evalua una expresión como falsa, esta ya no evaluará las siguientes.
 console.warn('Cortocircuito en AND (&&)');
 console.log(regresaFalse() && regresaTrue()); // false
 
-// TODO 4.2 Operador OR (||), si la primera expresión es verdadera, no se evalua la segunda expresión
+
+// TODO 4.2 Ejemplo del operador OR (||), si evalua una expresión como verdadera, esta ya no evaluará las siguientes.
 console.warn('Cortocircuito en OR (||)');
 console.log(regresaTrue() || regresaFalse()); // true
 

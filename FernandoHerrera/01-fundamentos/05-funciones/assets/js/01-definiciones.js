@@ -2,53 +2,52 @@
 
 * Son bloques de código que se pueden definir una vez y reutilizar en cualquier parte de nuestro programa.
 
-* Es buena practica declarar las funciones al inicio del archivo para tener un mejor orden en el código. 
-* Las funciones son bloques de código que se pueden reutilizar en cualquier parte de nuestro programa.
-
+* TIPS
+	* 1. Es buena practica declarar las funciones al inicio del archivo para tener un mejor orden en el código. 
 */
 
-
-// TODO: 1. Declaración de una función tradicional
-function saludar () {
-	console.log('Hola Mundo');
+// TODO: 1. Ejemplo de declaración de una función tradicional
+function saludar() {
+    console.log('Hola Mundo');
 }
 
 // saludar();
-// let saludar = 'Hi';
+// var saludar = 'Hi';
 // saludar();
 
+//TODO: 2. Ejemplo de declaración de una función anónima
+// * Son funciones que no tienen un nombre y se suelen asignar a variables.
+const funcionAnonima = function () {
+    console.log('Hola Mundo');
+};
 
-//TODO: 2. Declaración de una función anónima
-const saludar2 = function () {
-	console.log('Hola Mundo');
-}
+funcionAnonima();
 
-saludar2();
-
-//TODO: 3. Declaración de una función con parametros
+//TODO: 3.  Ejemplo de declaración de una función con parametros
 const saludarConParametros = function (nombre) {
-	console.log(`Hola ${nombre}`);
-}
+    console.log(`Hola ${nombre}`);
+};
 
 saludarConParametros('Juan');
 
-// TODO: Objeto Arguments en funciones
+// TODO: 4. Uso del ojeto Arguments en funciones
+// * Arguments es un objeto que contiene todos los argumentos pasados a la función 
 const saludarConArguments = function (nombre) {
-	console.log(arguments);
-	console.log(`Hola ${nombre}`);
-}
+    console.log(arguments);
+    console.log(`Hola ${nombre}`);
+};
 
 saludarConArguments('Juan', 27, 'JS');
 
-
-// TODO: 4. Declaración de una función de fecha o lambda functions
+// TODO: 5. Ejemplo de declaración de una función de fecha o lambda functions
 /*
-* Son más eficientes que las funciones tradicionales.
-* Evitan la sobreescritura del objeto this.
-*/
+ * Son una forma más concisa de escribir funciones anónimas
+ * Sintaxis básica:
+ 	* const nombreFuncion = () => { ... }; 
+ */
 
 const saludarFlecha = (nombre) => {
-	console.log('Hola Flecha ' + nombre);
-}
+    console.log('Hola Flecha ' + nombre);
+};
 
 saludarFlecha('Juan');

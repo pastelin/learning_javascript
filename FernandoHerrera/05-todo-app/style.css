@@ -1,0 +1,264 @@
+/*
+    * Recursos para aprender más sobre CSS:
+    * 1. https://www.youtube.com/watch?v=K3xmRF8ab1o&ab_channel=jonmircha
+    * 2. https://www.youtube.com/watch?v=p_lT7AgpEMU&ab_channel=jonmircha
+    * 3. https://www.youtube.com/watch?v=mVhoGXkDbMw&ab_channel=jonmircha
+    * 4. https://www.youtube.com/watch?v=udGrXWeJp1Y&ab_channel=jonmircha
+    * 5. https://www.w3schools.com/css/default.asp
+
+    * Herramientas para trabajar con CSS:
+    * 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    * 2. https://css-tricks.com/snippets/css/complete-guide-grid/
+    * 3. https://cssreference.io/
+    * 4. https://caniuse.com/
+    * 5. https://specificity.keegan.st/
+    * 6. https://codeguide.co/
+*/
+
+/* ************* Custom Properties ************* */
+:root {
+    --second-color: rgba(204, 154, 154, 0.8);
+    --second-alpha-color: #af5b5e;
+    --white-color: #fff;
+    --font: 'Montserrat', sans-serif;
+    --max-width: 600px;
+    --min-width: 280px;
+    --header-height: 4rem;
+}
+
+/* ************* Reset ************* */
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1400 - 300)));
+}
+
+a {
+    color: var(--white-color);
+    transition: all 0.5s ease-out;
+}
+
+h1 {
+    margin: 2rem 0;
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+    color: var(--second-alpha-color);
+}
+
+button {
+    border: 0;
+    background: none;
+    font-size: 100%;
+    transition: all 0.2s ease-out;
+}
+
+/* ************* Button ************* */
+
+.clear-completed {
+    padding: 0.3rem;
+    background-color: inherit;
+    border: 3px solid rgb(106, 26, 26);
+    margin-top: 0.5rem;
+    color: white;
+    border-radius: 0.25rem;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-container {
+    text-align: end;
+}
+
+.clear-completed:hover {
+    background-color: rgb(126, 34, 34);
+}
+
+.container {
+    width: 70%;
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    margin: auto;
+    font-weight: 300;
+}
+
+.todoapp {
+    background: #fff;
+    box-shadow: 0.25rem 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.todoapp input::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.todoapp input::-moz-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.todoapp input::input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.new-todo {
+    width: 100%;
+    font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1400 - 300)));
+    font-family: inherit;
+    line-height: 1.4em;
+    padding: 1rem;
+    border: 3px solid transparent;
+}
+
+.new-todo:focus {
+    outline: none;
+    border: 3px solid var(--second-color);
+}
+
+.main {
+    border-top: 1px solid #e6e6e6;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.todo-list li {
+    border-bottom: 1px solid #ededed;
+}
+
+.view {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 0.5rem;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+.toggle {
+    /* opacity: 0; */
+    display: none;
+}
+
+.todo-list li .toggle + label {
+    background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.todo-list li .toggle:checked + label {
+    background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
+}
+
+.todo-list li label {
+    padding: 15px 15px 15px 60px;
+    transition: color 0.4s;
+    font-weight: 400;
+    color: #4d4d4d;
+    display: inline-block;
+}
+
+.todo-list li.completed label {
+    color: #cdcdcd;
+    text-decoration: line-through;
+}
+
+.destroy {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    font-size: 30px;
+    color: var(--second-color);
+    margin-right: 1rem;
+}
+
+.destroy:hover {
+    color: var(--second-alpha-color);
+}
+
+.destroy:after {
+    content: 'X';
+    cursor: pointer;
+}
+
+.todo-list li:hover .destroy {
+    opacity: 1;
+}
+
+/* ************* Footer ************* */
+
+.todo-count {
+    display: inline-block;
+    padding-block: 4px;
+}
+
+.footer {
+    padding: 0.5rem;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+    background-color: rgba(0, 0, 0, 0.67);
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters li {
+    display: inline;
+}
+
+.filters li a {
+    margin: 3px;
+    padding: 3px 7px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 3px;
+}
+
+.filters li a:hover {
+    opacity: 0.6;
+    border: 2px solid white;
+}
+
+.filters li a.selected {
+    border: 2px solid white;
+}

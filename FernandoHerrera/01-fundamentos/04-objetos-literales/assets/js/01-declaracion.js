@@ -3,28 +3,26 @@
  * Los objetos literales se definen utilizando llaves {} y contienen una lista de pares clave-valor separados por comas.
  */
 
-// TODO: 1. Declaración de Objetos Listerales:
+// TODO: 1.  Ejemplo de declaración de Objeto Literal con el nombre 'libro'
 
 const libro = {
-  titulo: 'Cien Años de Soledad',
-  autor: 'Gabriel García Márquez',
-  año: 1967,
-  genero: 'Novela',
-  mostrarInfo: function() {
-    console.log(
-      `${this.titulo} es una ${this.genero} escrita por ${this.autor} en el año ${this.año}.`
-    );
-  },
+    titulo: 'Cien Años de Soledad',
+    autor: 'Gabriel García Márquez',
+    anio: 1967,
+    genero: 'Novela',
+    mostrarInfo: function () {
+        console.log(
+            `${this.titulo} es una ${this.genero} escrita por ${this.autor} en el año ${this.anio}.`
+        );
+    },
 };
-
-
 
 // TODO 2. Formas de acceder a los elementos:
 
 // TODO 2.1 Imprimir el objeto libro
 console.log(libro);
 
-// TODO 2.2 Imprimir la información del libro
+// TODO 2.2 Imprimir la información del libro por medio del método mostrarInfo
 libro.mostrarInfo();
 
 // TODO 2.3 Imprimir el titulo del libro por medio de la notación de punto
@@ -33,24 +31,32 @@ console.log(libro.titulo);
 // TODO 2.4 Imprimir el titulo del libro por medio de la notación de corchetes
 console.log(libro['titulo']);
 
+// TODO 2.5 Imprimir el titulo, autor y anio del libro utilizando la desestructuración
+/*
+ * ¿Por qué utilizar las desestructuración de objetos literales?
+ * Nos permite extraer valores de propiedades de un objeto y asignarlos a variables de una manera más concisa y legible.
+ */
 
+const { titulo, autor, anio } = libro;
+
+console.log({ titulo, autor, anio });
 
 // TODO: Tarea 1
-let personaje = {
-	nombre: 'Tony Stark',
-	codeName: 'Ironman', 
-	vivo: false,
-	edad: 40,
-	coords: {
-		lat: 34.034,
-		lng: -118.70
-	},
-	trajes: ['Mark I', 'Mark V', 'Hulkbuster'],
-	direccion: {
-		zip: '10880, 90265',
-		ubicacion: 'Malibu, California'
-	}
-}
+const personaje = {
+    nombre: 'Tony Stark',
+    codeName: 'Ironman',
+    vivo: false,
+    edad: 40,
+    coords: {
+        lat: 34.034,
+        lng: -118.7,
+    },
+    trajes: ['Mark I', 'Mark V', 'Hulkbuster'],
+    direccion: {
+        zip: '10880, 90265',
+        ubicacion: 'Malibu, California',
+    },
+};
 
 // TODO: T1.1 Imprimir el arreglo personaje
 console.log(personaje);
@@ -71,10 +77,4 @@ console.log('Latitud:', personaje.coords.lat);
 console.log('No. Trajes: ' + personaje.trajes.length);
 
 // TODO: T1.7 Imprimir el último traje del personaje utilizando la propiedad length
-console.log('Último. Traje: ' + personaje.trajes[personaje.trajes.length - 1]); 
-
-// TODO: T1.8 Imprimir si el personaje está vivo utilizando la anotación de corchetes
-const x = 'vivo';
-console.log('Vivo:', personaje[x]);
-
-
+console.log('Último. Traje: ' + personaje.trajes[personaje.trajes.length - 1]);

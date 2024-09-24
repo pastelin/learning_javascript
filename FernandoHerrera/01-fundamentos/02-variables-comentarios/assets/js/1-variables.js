@@ -14,7 +14,7 @@
 // TODO: 1.1 Declarar variable con comentarios para JsDoc
 /**
  * Comentario para documentación
- * @type {number}
+ * @type {string}
  * @description Variable que contiene el día de la semana, para más información consultar la documentación.https://jsdoc.app/?trk=article-ssr-frontend-pulse_little-text-block
  */
 const hoy = 'jueves';
@@ -31,7 +31,7 @@ console.log(hoy);
 
 
 // TODO: 2.1 declarar variable con var, es una variable global que ha existido desde el inicio de JavaScript
-var a = 'Soy una una variable var';
+var a = 'Soy una variable var';
 
 
 // TODO: 2.2 declarar variable con let, es una variable local, se recomienda usar let en lugar de var
