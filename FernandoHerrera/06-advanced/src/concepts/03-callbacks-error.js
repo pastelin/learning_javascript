@@ -7,9 +7,16 @@ import { heroes } from '../data/heros';
 export const callbacksComponent = (element) => {
     const id = '5d86371f2343e37870b91ef1';
 
-    findHero(id, (hero) => {
+    findHero(id, (error, response) => {
         // element.innerHTML = hero?.name || 'Hero not found';
-        element.innerHTML = hero?.name;
+
+        if (error) {
+            element.innerHTML = error;
+            return;
+        }
+
+        element.innerHTML = response.name;
+        
     });
 };
 
@@ -19,7 +26,12 @@ export const callbacksComponent = (element) => {
  * @param {( error: String|Null, hero: Object) => void} callback
  */
 const findHero = (id, callback) => {
-    const hero = heroes.find((hero) => hero.id === id);
+    const response = heroes.find((hero) => hero.id === id);
 
-    callback(hero);
+    if (!response) {
+        callback(`Hero with id ${id} not found`);
+        return;
+    }
+
+    callback(null, response);
 };

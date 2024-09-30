@@ -51,6 +51,8 @@ Escribe la frase **Hola Mundo** desde el HTML
 4. Prettier
 
 
+================================================================================================================0
+# Creacion de proyecto con NODE
 
 ## NODE
 Es un entorno de ejecución de JavaScript del lado del servidor
@@ -74,18 +76,58 @@ Vite es una herramienta de construcción y desarrollo rápido para proyectos web
 1. Abrir cdm en la carpeta raiz donde crearemos el proyecto
 2. Validar que se tenga node instalado con node --version
 3. crear proyecto con **npm create vite**
-	a. colocar nombre de proyecto
+	a. colocar nombre de proyecto **01-app-vite**
 	b. elegir vanilla que es JS sin frameworks
 	c. elegir JS
 4. acceder al proyecto
 5. instalar los paquetes con npm install
 6. ejecutar proyecto con npm run dev
 
-Vite nos va a ayudar a trabajar nuestra aplicacion con diferentes herramientas para automatizar procesos
-https://vitejs.dev/
-NPM (Node Package Manager)
+## Explicar Estructura
+* Los módulos permiten dividir el código en partes más pequeñas y manejables, facilitando la reutilización y el mantenimiento.
 
-NODE: Ayuda a tener herramientas facil de instalar, y permite trabajar de una manera rápida y eficiente.
+## Deployar localmente
+
+
+## Construir
+
+## Deployar con Netlify
+https://www.netlify.com/
+
+================================================================================================
+
+# Aplicación TODO
+
+## Instalar paquetes
+
+## Explicar version productiva
+https://todo-pastelin.netlify.app/
+
+## Explicar estructura
+
+## Resolver dos errores
+
+#### Mapas de origenes
+* Mapas de Orígenes: Permiten depurar el código fuente original en lugar del código transpilado o empaquetado.
+
+
+* Usar la anulación de archivos
+* Borrar la anulación de archivos
+
+## Dejar la tarea
+
+
+## Tareas
+
+1. Resolver dos errores de la aplicación.
+2. Modificar colores o diseño de aplicación.
+3. Insertar las tareas al inicio y no al final
+4. Construir version productica con VITE.
+5. Deployar aplicación con Netlify
+
+
+
+
 
 ### Activar que al ejecutar **code .** se abra vsc
 1. Ir a paleta de comandos ctrl + shift + p
@@ -93,19 +135,4 @@ NODE: Ayuda a tener herramientas facil de instalar, y permite trabajar de una ma
 
 
 
-#### Mapas de origenes
-Mapas de Orígenes: Permiten depurar el código fuente original en lugar del código transpilado o empaquetado.
-
-## Actividades 
-
-
-
-
-## Tareas
-
-Insertar las tareas al inicio y no al final
-1. Resolver dos errores de la aplicación.
-2. Modificar colores o diseño de aplicación.
-3. Construir version productica con VITE.
-4. Deployar aplicación con Netlify
 
