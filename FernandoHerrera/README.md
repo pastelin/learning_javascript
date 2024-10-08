@@ -136,3 +136,17 @@ https://todo-pastelin.netlify.app/
 
 
 
+06-api => breakingbad-app
+
+https://breakingbadquotes.xyz/
+
+https://breaking-bad-app01.netlify.app/
+
+
+
+¿Qué es una API (Application Programming Interfaces)? 
+
+Es una interfaz que permite que una aplicación interactúe con otra
+
+PUT: Propósito: Actualizar un recurso completo.
+PATCH: Propósito: Actualizar parcialmente un recurso.
