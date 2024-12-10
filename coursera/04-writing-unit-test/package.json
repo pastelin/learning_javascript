@@ -1,0 +1,18 @@
+{
+  "name": "04-writing-unit-test",
+  "version": "1.0.0",
+  "description": "> ### **Tips: Before you Begin**\r > #### **To view your code and instructions side-by-side**, select the following in your VSCode toolbar:\r > - View -> Editor Layout -> Two Columns\r > - To view this file in Preview mode, right click on this README.md file and `Open Preview`\r > - Select your code file in the code tree, which will open it up in a new VSCode tab.\r > - Drag your assessment code files over to the second column. \r > - Great work! You can now see instructions and code at the same time. \r > - Questions about using VSCode? Please see our support resources here:  \r > [Visual Studio Code on Coursera](https://www.coursera.org/learn/programming-with-javascript/supplement/roMvE/visual-studio-code-on-coursera)\r > #### **To run your JavaScript code**\r > - Select your JavaScript file\r > - Select the \"Run Code\" button in the upper right hand toolbar of VSCode.  \r > Ex: It looks like a triangular \"Play\" button. \r <br><br>",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "04-writing-unit-test": "file:"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
